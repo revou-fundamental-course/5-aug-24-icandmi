@@ -8,7 +8,9 @@
 </head>
 <body>
 <main>
+  <div class="title">
     <h1>Kalkulator BMI</h1>
+  </div>
     <div class="Parent">
         <div class="child1">
     <aside>
@@ -21,13 +23,13 @@
         <p>Isi form berikut untuk menghitung Indeks Massa Tubuh (BMI) Anda.</p>
       </div>
       <div>
-        <form id="form" class="form" aria-label="Kalkulator BMI">
+        <form id="form" name="myForm" class="form" aria-label="Kalkulator BMI">
           <div>
             <label class="form-label" for="gender">Jenis Kelamin</label>
-            <div class="input-group">
-              <input type="radio" name="gender" id="male" value="Pria" class="form-input-check" checked>
+            <div class="input">
+              <input type="radio" name="gender" id="male" value="Pria" class="input" checked>
               <label for="male">Pria</label>
-              <input type="radio" name="gender" id="female" value="Wanita" class="form-input-check">
+              <input type="radio" name="gender" id="female" value="Wanita" class="input" >
               <label for="female">Wanita</label>
             </div>
             <p><input type="number" name="weight" id="weight" class="form-input" min="1" aria-describedby="weightDesc">
@@ -42,20 +44,63 @@
             <button>Reset</button>
          </form>     
 
+         <div>
+          <p class="paragraph mb-1">
+            Menurut WHO, kategori standar berat badan ideal pria dan wanita dewasa berdasarkan BMI adalah sebagai berikut :
+          <div class="mb-1">
+            <ol class="features">
+              <li>Kurang dari 18,5 berarti berat badan kurang (underweight).</li>
+              <li>Antara 18,5 - 24,9 berarti berat badan normal</li>
+              <li>Antara 25-29,9 berarti berat badan berlebih (overweight).</li>
+              <li>Di atas 30 berarti obesitas.</li>
+            </ol>
+        </div>
+        
+
+         
+
 </aside>
 </div>
 <div class="child2">
 <aside>
-  <form id="form" class="form" aria-label="Kalkulator BMI">
-    <div>
+ 
+    <div class="hasil">
       <label class="form-label" for="gender">Hasil Hitung</label>
       
-   </form>     
-    <p>
-        Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? <br> Yuk, hitung sekarang di kalkulator BMI.
+    </div>
 
-    </p>
+    <div class="mb-1">
+      <h3 class="sub-title">Keunggulan fitur</h3>
+      <ol class="features">
+        <li>Menghitung berat badan</li>
+        <li>Menentukan kategori berat badan ideal atau tidak</li>
+        <li>Mempersiapkan program penurunan berat badan</li>
+      </ol>
+    </div>
+    <div>
+      <p class="paragraph mb-1">
+        Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+      </p>
+      <p class="paragraph">
+        Kalkulator akan memberi anda gambaran tentang perbandingan berat badan anda dengan nilai umum. Indek Massa Tubuh (atau BMI) dihitung sebagai berat badan anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter) atau BMI = Kg/M<sup>2</sup>.
+      </p>
+    </div>
+
+    <div>
+      <p class="paragraph">Selain melihat BMI, ada beberapa hal spesifik yang perlu diketahui oleh tim medis dalam menentukan kesehatan seseorang, yaitu:
+     </p>
+      <ol class="features">
+        <li>Aktivitas fisik</li>
+        <li>Ukuran lingkar pinggang</li>
+        <li>Ketebalan lipatan kulit</li>
+        <li>Evaluasi diet, dilakukan secara sehat atau tidak</li>
+      </ol>
+    </div>
+
 </aside>
+<footer>
+  <p>Made by Irzan</p>
+</footer>
 </main>
 </body>
 </html>
